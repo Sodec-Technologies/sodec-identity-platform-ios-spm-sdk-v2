@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "sodec-identity-platform-v2-ios-spm",
+    name: "sodec-identity-platform-v2",
     platforms: [
         .iOS("15.6")
     ],
@@ -17,8 +17,7 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", exact: "3.3.2000")
     ],
     targets: [
-        // Onceden derlenmis SDK (yerel sembolleri ayiklanmis; GitHub'in 100 MB dosya sinirinin altinda).
-        // ML Kit, OpenCV, TensorFlow Lite, Lottie ve AFNetworking icinde gomuludur.
+        // Onceden derlenmis SDK. ML Kit, OpenCV, TensorFlow Lite, Lottie ve AFNetworking icinde gomuludur.
         .binaryTarget(
             name: "SAMobileCapture",
             path: "Frameworks/SAMobileCapture.xcframework"
