@@ -1,0 +1,10 @@
+framework module SAMobileCapture {
+  umbrella header "SAMobileCapture.h"
+  export *
+
+  module * { export * }
+}
+
+module SAMobileCapture.Swift {
+  header "SAMobileCapture-Swift.h"
+}

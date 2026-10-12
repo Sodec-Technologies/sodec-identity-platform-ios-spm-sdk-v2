@@ -1,0 +1,5 @@
+???
+ovi_enabled
+ovi_not_enabled
+chip
+mrz
