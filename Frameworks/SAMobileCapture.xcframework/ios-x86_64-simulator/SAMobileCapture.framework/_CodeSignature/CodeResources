@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/SAMobileCapture-Swift.h</key>
 		<data>
-		zeonR8VKuE0EQU+obQXumBjRLls=
+		VFFpuulEtIAa1srjqnuSg5X+0SU=
 		</data>
 		<key>Headers/SAMobileCapture.h</key>
 		<data>
@@ -498,7 +498,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AFLxPP6UCMnrSRsKkdnhEgGvwJY=
+		h+gCS5+vYHuVMbpXfF2AdutLb1k=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
@@ -538,19 +538,19 @@
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OEcjWASs6mwR7ioNuYArKFd6yss=
+		X5L6t2b3YycggHCx3gvSVcNiQZs=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VzvMNZz3p8WW1zUa5QeJiQ9sFcc=
+		uvoqnUKHyTDgevE9Wyd3b0z7VNc=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		WTpLZGavaPDtBztpLrMhHN78Mx8=
+		ACcvREq4rxY/fBqvXEJBb62sbR8=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VzvMNZz3p8WW1zUa5QeJiQ9sFcc=
+		uvoqnUKHyTDgevE9Wyd3b0z7VNc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1318,7 +1318,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wyko2MJvH/z+M69iJBJv4YcK7G3HxIj199bHbsuvZwA=
+			ro6FRj9SySUYy5vOAB2kTtuuEW9gewHsX0HNFXyMR9c=
 			</data>
 		</dict>
 		<key>Headers/SAMobileCapture.h</key>
@@ -1647,28 +1647,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWG7WNOCbE54WiwdEe8jctLfoa0WwnzuZAjSJDA0NGs=
+			akNFGnuTpkmPhDn8dw2i8VKS4bEchzLjAhQL1APlF44=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xHm953Y2cQnqwLfUeaIbr3lJIE8V3hQkn7dnojort9Y=
+			6EYanrLERmZL2iw1c8bwsYt0PtnzvIvYE/hCCCcM1e4=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/quVGCxQLNOcnofde+SRMRlCrxeTVHzIrV8fUEtBDB8=
+			75Mde04GWCqyQ+CkN3dZWXV36LUQNL0C00S6aYIR/mY=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xHm953Y2cQnqwLfUeaIbr3lJIE8V3hQkn7dnojort9Y=
+			6EYanrLERmZL2iw1c8bwsYt0PtnzvIvYE/hCCCcM1e4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

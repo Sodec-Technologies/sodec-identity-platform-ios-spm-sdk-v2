@@ -159,6 +159,34 @@
           },
           {
             "kind": "Function",
+            "name": "addToViewFillingBounds",
+            "printedName": "addToViewFillingBounds(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAAnimationView(im)addToViewFillingBounds:",
+            "mangledName": "$s15SAMobileCapture15SAAnimationViewC05addToD13FillingBoundsyySo6UIViewCF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "play",
             "printedName": "play()",
             "children": [

@@ -459,6 +459,9 @@ SWIFT_CLASS("_TtC15SAMobileCapture15SAAnimationView")
 - (void)setContentMode:(enum UIViewContentMode)contentMode;
 - (void)enableLoopMoode;
 - (void)addToView:(UIView * _Nonnull)view;
+/// Animasyonu kapsayıcının tüm alanına Auto Layout ile sabitler (SIPMI-31).
+/// Kapsayıcı henüz yerleşmemişken (viewDidLoad) frame ile eklemek 0x0 boyut verir.
+- (void)addToViewFillingBounds:(UIView * _Nonnull)view;
 - (void)play;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

@@ -28,6 +28,7 @@ import _SwiftConcurrencyShims
   @objc public func setContentMode(_ contentMode: UIKit::UIView.UIKit::ContentMode)
   @objc public func enableLoopMoode()
   @objc public func addToView(_ view: UIKit::UIView)
+  @objc public func addToViewFillingBounds(_ view: UIKit::UIView)
   @objc public func play()
   @objc deinit
 }
