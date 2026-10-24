@@ -132,6 +132,38 @@ extern NSString * const SAFlowConfigDocumentTypeTemporaryProtection;
 @end
 
 // ---------------------------------------------------------------------------
+// SAFlowConfigVideoCall — "videoCall" block of api/Login/Start and the data of
+// GET api/video-call/availability (SIPMI-23; sözleşme docs/video-call-sdk-api.md §3.1-3.2)
+// ---------------------------------------------------------------------------
+extern NSString * const SAVideoCallUnavailableReasonNotEnabled;   // "NOT_ENABLED"
+extern NSString * const SAVideoCallUnavailableReasonOutOfHours;   // "OUT_OF_HOURS"
+extern NSString * const SAVideoCallUnavailableReasonNotReady;     // "NOT_READY"
+
+@interface SAFlowConfigVideoCall : NSObject
+
+/// Bu işlemde görüntülü görüşme var mı (müşteri lisansı + müşteri/akış adımı).
+@property (nonatomic, assign)            BOOL      enabled;
+/// Şu an kuyruğa girilebilir mi (hizmet hazır ve çalışma saati içinde).
+@property (nonatomic, assign)            BOOL      available;
+/// available = NO ise: NOT_ENABLED / OUT_OF_HOURS / NOT_READY.
+@property (nonatomic, nullable, copy)    NSString *unavailableReason;
+/// OUT_OF_HOURS ise sonraki açılış anı; bilinmiyorsa nil.
+@property (nonatomic, nullable, strong)  NSDate   *nextOpenAt;
+/// Kuyruk bekleme üst sınırı (sn); bilinmiyorsa 0.
+@property (nonatomic, assign)            NSInteger maxQueueWaitSeconds;
+/// available = YES ise kaba bekleme tahmini (sn); bilinmiyorsa nil.
+@property (nonatomic, nullable, strong)  NSNumber *estimatedWaitSeconds;
+/// Yalnızca availability ucunda: kuyrukta bekleyen müşteri sayısı.
+@property (nonatomic, nullable, strong)  NSNumber *queuedCount;
+
+/// Görüşme açık ama şu an kullanılamıyor (müşteri bilgilendirilmeli).
+@property (nonatomic, readonly)          BOOL      isEnabledButUnavailable;
+
++ (nullable SAFlowConfigVideoCall *)fromDictionary:(nullable NSDictionary *)dict;
+
+@end
+
+// ---------------------------------------------------------------------------
 // SAFlowConfigSteps — wrapper for the "steps" JSON object
 // ---------------------------------------------------------------------------
 @interface SAFlowConfigSteps : NSObject
@@ -157,6 +189,9 @@ extern NSString * const SAFlowConfigDocumentTypeTemporaryProtection;
 
 @property (nonatomic, nullable, strong) SAFlowConfigGlobal *global;
 @property (nonatomic, nullable, strong) SAFlowConfigSteps  *steps;
+
+/// Görüntülü görüşme ön kontrol bilgisi; sunucu göndermediyse (eski backend) nil = görüşme yok.
+@property (nonatomic, nullable, strong) SAFlowConfigVideoCall *videoCall;
 
 // Convenience accessors (populated by flattenSteps)
 @property (nonatomic, nullable, strong) SAFlowConfigStepCaptureDocument *captureDocument;

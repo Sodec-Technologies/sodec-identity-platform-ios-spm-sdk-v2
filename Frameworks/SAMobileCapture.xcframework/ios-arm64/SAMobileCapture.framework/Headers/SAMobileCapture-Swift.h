@@ -816,6 +816,78 @@ SWIFT_CLASS("_TtC15SAMobileCapture8SAStatus")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@protocol SAVideoCallClientDelegate;
+/// Müşteri tarafı görüntülü görüşme istemcisi (SIPMI-22). Görüşme altyapısı SDK içinde kalır: public arayüzde yalnızca
+/// UIKit / Foundation tipleri vardır. Bağlantı bilgisi (url, token, video profili) status ucunun <code>connection</code> alanından gelir.
+SWIFT_CLASS("_TtC15SAMobileCapture17SAVideoCallClient")
+@interface SAVideoCallClient : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull errorDomain;)
++ (NSString * _Nonnull)errorDomain SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) id <SAVideoCallClientDelegate> _Nullable delegate;
+/// Müşterinin kendi kamera önizlemesi.
+@property (nonatomic, readonly, strong) UIView * _Nonnull localVideoView;
+/// Müşteri Temsilcisinin görüntüsü.
+@property (nonatomic, readonly, strong) UIView * _Nonnull remoteVideoView;
+/// Müşteri Temsilcisi odada mı.
+@property (nonatomic, readonly) BOOL isAgentPresent;
+/// Oda bağlı mı.
+@property (nonatomic, readonly) BOOL isConnected;
+/// Mikrofon / kamera açık mı (kullanıcı kapatabilir).
+@property (nonatomic, readonly) BOOL isMicrophoneEnabled;
+@property (nonatomic, readonly) BOOL isCameraEnabled;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+/// Odaya bağlanır, kamera ve mikrofonu yayınlar. Video değerleri <code>connection.video</code> profilinden gelir
+/// (0 verilirse 1280x720, 30 fps, 1700 kbps). Hata olursa completion’a NSError döner.
+- (void)connectWithUrl:(NSString * _Nonnull)url token:(NSString * _Nonnull)token width:(NSInteger)width height:(NSInteger)height frameRate:(NSInteger)frameRate maxBitrateKbps:(NSInteger)maxBitrateKbps completion:(void (^ _Nonnull)(NSError * _Nullable))completion;
+- (void)setMicrophoneEnabled:(BOOL)enabled completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+- (void)setCameraEnabled:(BOOL)enabled completion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Ön / arka kamera geçişi (Müşteri Temsilcisi belge göstermeyi isteyebilir).
+- (void)switchCameraWithCompletion:(void (^ _Nullable)(NSError * _Nullable))completion;
+/// Odadan çıkar. Görüşmeyi bitirmek (leave) ayrı bir API çağrısıdır; bu yalnızca bağlantıyı kapatır.
+- (void)disconnectWithCompletion:(void (^ _Nullable)(void))completion;
+@end
+
+/// Görüntülü görüşme olayları. Tüm çağrılar ana kuyrukta yapılır.
+SWIFT_PROTOCOL("_TtP15SAMobileCapture25SAVideoCallClientDelegate_")
+@protocol SAVideoCallClientDelegate
+/// Odaya bağlanıldı; kamera ve mikrofon yayını başladı.
+- (void)videoCallClientDidConnect:(SAVideoCallClient * _Nonnull)client;
+/// Müşteri Temsilcisi odaya girdi (true) veya odadan çıktı (false). Çıkışta müşteriye
+/// “bağlantısı koptu, yeniden bağlanması bekleniyor” bildirimi gösterilir; 15 sn içinde dönmezse
+/// görüşme backend tarafından sonlandırılır ve sonuç status ucundan gelir.
+- (void)videoCallClient:(SAVideoCallClient * _Nonnull)client agentPresenceDidChange:(BOOL)isPresent;
+@optional
+/// Müşteri Temsilcisinin görüntüsü geldi (remoteVideoView artık görüntü gösteriyor).
+- (void)videoCallClientDidReceiveAgentVideo:(SAVideoCallClient * _Nonnull)client;
+/// Ağ kesintisinde otomatik yeniden bağlanma başladı / tamamlandı.
+- (void)videoCallClientIsReconnecting:(SAVideoCallClient * _Nonnull)client;
+- (void)videoCallClientDidReconnect:(SAVideoCallClient * _Nonnull)client;
+@required
+/// Oda bağlantısı tamamen koptu. Görüşme bitmediyse (status isFinal değilse) çağıran yeni token alıp
+/// 15 sn içinde connect’i tekrar çağırmalıdır. disconnect() ile kapatılınca error nil gelir.
+- (void)videoCallClient:(SAVideoCallClient * _Nonnull)client didDisconnectWithError:(NSError * _Nullable)error;
+@end
+
+/// Görüntülü görüşme için kamera ve mikrofon izinleri (SIPMI-22). Host uygulamanın Info.plist’inde
+/// NSCameraUsageDescription ve NSMicrophoneUsageDescription tanımlı olmalıdır; yoksa iOS uygulamayı kapatır.
+SWIFT_CLASS("_TtC15SAMobileCapture22SAVideoCallPermissions")
+@interface SAVideoCallPermissions : NSObject
+/// Info.plist’te gerekli açıklama anahtarları var mı (izin istemeden önce kontrol edilir).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL hasUsageDescriptions;)
++ (BOOL)hasUsageDescriptions SWIFT_WARN_UNUSED_RESULT;
+/// Kamera ve mikrofon izni verilmiş mi.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isGranted;)
++ (BOOL)isGranted SWIFT_WARN_UNUSED_RESULT;
+/// Daha önce reddedildiyse (veya kısıtlıysa) tekrar sorulamaz; kullanıcı Ayarlar’a yönlendirilmelidir.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isDenied;)
++ (BOOL)isDenied SWIFT_WARN_UNUSED_RESULT;
+/// Kamera, ardından mikrofon izni ister. Sonuç ana kuyrukta döner: ikisi de verildiyse true.
++ (void)requestWithCompletion:(void (^ _Nonnull)(BOOL))completion;
+/// Uygulamanın Ayarlar sayfasını açar (izin reddedildiyse).
++ (void)openSettings;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #endif // defined(__OBJC__)
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

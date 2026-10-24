@@ -9,10 +9,10 @@ Paket gizli bir GitHub deposundadır. Xcode'da **Settings → Source Control →
 Xcode: **File → Add Package Dependencies…** ve şu adresi girin:
 
 ```
-https://github.com/Sodec-Technologies/sodec-identity-platform-v2-ios-spm.git
+https://github.com/Sodec-Technologies/sodec-identity-platform-ios-spm-sdk-v2.git
 ```
 
-Sürüm kuralı olarak **Exact Version** seçip `1.0.1` yazın ve `SodecIdentityPlatform` ürününü uygulama hedefinize ekleyin.
+Sürüm kuralı olarak **Exact Version** seçip `1.0.2-beta.1` yazın ve `SodecIdentityPlatform` ürününü uygulama hedefinize ekleyin.
 
 ## Kullanım
 

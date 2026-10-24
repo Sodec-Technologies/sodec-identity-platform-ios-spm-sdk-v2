@@ -43,6 +43,29 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)customerVerificationDidError:(SACustomerVerification *)controller
                     withErrorMessage:(NSString *)errorMessage;
 
+@optional
+/**
+ * Görüntülü görüşme bu işlemde açık ama şu an kullanılamıyor (SIPMI-23). KYC başlamadan (Login/Start sonrası) ve End'den
+ * hemen önce çağrılabilir; müşteri SDK içinde ayrıca bilgilendirilir.
+ * @param reason SAVideoCallUnavailableReasonOutOfHours veya SAVideoCallUnavailableReasonNotReady
+ * @param nextOpenAt OUT_OF_HOURS ise sonraki açılış anı; bilinmiyorsa nil
+ */
+- (void)customerVerification:(SACustomerVerification *)controller
+    videoCallUnavailableWithReason:(NSString *)reason
+                        nextOpenAt:(nullable NSDate *)nextOpenAt;
+
+/**
+ * Görüntülü görüşme bitti (SIPMI-27); customerVerificationDidDone'dan hemen önce çağrılır. Nihai karar görüşmede
+ * verilir: yalnızca APPROVED onaydır, diğer sonuçlarda işlem kapanmıştır ve DidDone Rejected ile gelir.
+ * @param result APPROVED / REJECTED / EXPIRED / DROPPED / ABANDONED (SAVideoCallStatus* sabitleri)
+ * @param reasonCode Müşteriye gösterilebilir gerekçe kodu (VERIFICATION_FAILED, POOR_QUALITY, TECHNICAL_DISCONNECT,
+ *        EXPIRED_QUEUE_TIMEOUT, EXPIRED_CALL_NOT_STARTED, OUT_OF_HOURS, VIDEO_CALL_NOT_JOINED, CUSTOMER_LEFT,
+ *        VIDEO_CALL_CANCELLED); onayda ve gerekçesiz bitişte nil
+ */
+- (void)customerVerification:(SACustomerVerification *)controller
+    videoCallDidFinishWithResult:(NSString *)result
+                      reasonCode:(nullable NSString *)reasonCode;
+
 @end
 
 @interface SAApiManager : NSObject
@@ -71,6 +94,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy,   readwrite) NSString              *scenario;
 @property (nonatomic, assign, readwrite) BOOL                   showServiceErrors;
 @property (nonatomic, assign, readwrite) SAProcessReturnType    processReturnType;
+
+// --- Görüntülü görüşme (SIPMI-25) ---
+// Aydınlatma / rıza metni onayı host uygulamanın sorumluluğundadır ve SDK başlatılmadan önce alınır. İsteğe bağlı olarak
+// onaylanan metnin sürümü ve onay anı verilirse görüşme talebine eklenir (backend denetim kaydına yazılır).
+@property (nonatomic, copy,   nullable, readwrite) NSString    *videoCallConsentVersion;
+@property (nonatomic, strong, nullable, readwrite) NSDate      *videoCallConsentAt;
 
 // --- Identity & age ---
 @property (nonatomic, assign, readwrite) NSInteger              minimumAgeForKyc;

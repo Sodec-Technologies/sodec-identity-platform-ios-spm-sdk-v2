@@ -36606,6 +36606,1516 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SAMobileCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SAMobileCapture"
+      },
+      {
+        "kind": "Import",
+        "name": "LiveKitClient",
+        "printedName": "LiveKitClient",
+        "declKind": "Import",
+        "moduleName": "SAMobileCapture",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SAVideoCallClientDelegate",
+        "printedName": "SAVideoCallClientDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "videoCallClientDidConnect",
+            "printedName": "videoCallClientDidConnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClientDidConnect:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE10DidConnectyyAA0cdE0CF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoCallClient",
+            "printedName": "videoCallClient(_:agentPresenceDidChange:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClient:agentPresenceDidChange:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE0_22agentPresenceDidChangeyAA0cdE0C_SbtF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoCallClientDidReceiveAgentVideo",
+            "printedName": "videoCallClientDidReceiveAgentVideo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClientDidReceiveAgentVideo:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE20DidReceiveAgentVideoyyAA0cdE0CF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoCallClientIsReconnecting",
+            "printedName": "videoCallClientIsReconnecting(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClientIsReconnecting:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE14IsReconnectingyyAA0cdE0CF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoCallClientDidReconnect",
+            "printedName": "videoCallClientDidReconnect(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClientDidReconnect:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE12DidReconnectyyAA0cdE0CF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "videoCallClient",
+            "printedName": "videoCallClient(_:didDisconnectWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSError",
+                    "printedName": "Foundation.NSError",
+                    "usr": "c:objc(cs)NSError"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate(im)videoCallClient:didDisconnectWithError:",
+            "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP05videodE0_22didDisconnectWithErroryAA0cdE0C_So7NSErrorCSgtF",
+            "moduleName": "SAMobileCapture",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAMobileCapture.SAVideoCallClientDelegate>",
+            "sugared_genericSig": "<Self where Self : SAMobileCapture.SAVideoCallClientDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate",
+        "mangledName": "$s15SAMobileCapture25SAVideoCallClientDelegateP",
+        "moduleName": "SAMobileCapture",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SAVideoCallClient",
+        "printedName": "SAVideoCallClient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(cpy)errorDomain",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC11errorDomainSSvpZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(cm)errorDomain",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC11errorDomainSSvgZ",
+                "moduleName": "SAMobileCapture",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any SAMobileCapture.SAVideoCallClientDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)delegate",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC8delegateAA0cdE8Delegate_pSgvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SAMobileCapture.SAVideoCallClientDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SAVideoCallClientDelegate",
+                        "printedName": "any SAMobileCapture.SAVideoCallClientDelegate",
+                        "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)delegate",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC8delegateAA0cdE8Delegate_pSgvg",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any SAMobileCapture.SAVideoCallClientDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SAVideoCallClientDelegate",
+                        "printedName": "any SAMobileCapture.SAVideoCallClientDelegate",
+                        "usr": "c:@M@SAMobileCapture@objc(pl)SAVideoCallClientDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)setDelegate:",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC8delegateAA0cdE8Delegate_pSgvs",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15SAMobileCapture17SAVideoCallClientC8delegateAA0cdE8Delegate_pSgvM",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC8delegateAA0cdE8Delegate_pSgvM",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localVideoView",
+            "printedName": "localVideoView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)localVideoView",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC14localVideoViewSo6UIViewCvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)localVideoView",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC14localVideoViewSo6UIViewCvg",
+                "moduleName": "SAMobileCapture",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "remoteVideoView",
+            "printedName": "remoteVideoView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)remoteVideoView",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC15remoteVideoViewSo6UIViewCvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)remoteVideoView",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC15remoteVideoViewSo6UIViewCvg",
+                "moduleName": "SAMobileCapture",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAgentPresent",
+            "printedName": "isAgentPresent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)isAgentPresent",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC14isAgentPresentSbvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)isAgentPresent",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC14isAgentPresentSbvg",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)isConnected",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC11isConnectedSbvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)isConnected",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC11isConnectedSbvg",
+                "moduleName": "SAMobileCapture",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMicrophoneEnabled",
+            "printedName": "isMicrophoneEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)isMicrophoneEnabled",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC19isMicrophoneEnabledSbvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)isMicrophoneEnabled",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC19isMicrophoneEnabledSbvg",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isCameraEnabled",
+            "printedName": "isCameraEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(py)isCameraEnabled",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC15isCameraEnabledSbvp",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)isCameraEnabled",
+                "mangledName": "$s15SAMobileCapture17SAVideoCallClientC15isCameraEnabledSbvg",
+                "moduleName": "SAMobileCapture",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallClient",
+                "printedName": "SAMobileCapture.SAVideoCallClient",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)init",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientCACycfc",
+            "moduleName": "SAMobileCapture",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(url:token:width:height:frameRate:maxBitrateKbps:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.NSError?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSError",
+                        "printedName": "Foundation.NSError",
+                        "usr": "c:objc(cs)NSError"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)connectWithUrl:token:width:height:frameRate:maxBitrateKbps:completion:",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC7connect3url5token5width6height9frameRate14maxBitrateKbps10completionySS_SSS4iySo7NSErrorCSgctF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMicrophoneEnabled",
+            "printedName": "setMicrophoneEnabled(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)setMicrophoneEnabled:completion:",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC20setMicrophoneEnabled_10completionySb_ySo7NSErrorCSgcSgtF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCameraEnabled",
+            "printedName": "setCameraEnabled(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)setCameraEnabled:completion:",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC16setCameraEnabled_10completionySb_ySo7NSErrorCSgcSgtF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "switchCamera",
+            "printedName": "switchCamera(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.NSError?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)switchCameraWithCompletion:",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC12switchCamera10completionyySo7NSErrorCSgcSg_tF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient(im)disconnectWithCompletion:",
+            "mangledName": "$s15SAMobileCapture17SAVideoCallClientC10disconnect10completionyyycSg_tF",
+            "moduleName": "SAMobileCapture",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallClient",
+        "mangledName": "$s15SAMobileCapture17SAVideoCallClientC",
+        "moduleName": "SAMobileCapture",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "SAMobileCapture",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "SAMobileCapture"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SAVideoCallPermissions",
+        "printedName": "SAVideoCallPermissions",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "hasUsageDescriptions",
+            "printedName": "hasUsageDescriptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cpy)hasUsageDescriptions",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC20hasUsageDescriptionsSbvpZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cm)hasUsageDescriptions",
+                "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC20hasUsageDescriptionsSbvgZ",
+                "moduleName": "SAMobileCapture",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isGranted",
+            "printedName": "isGranted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cpy)isGranted",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC9isGrantedSbvpZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cm)isGranted",
+                "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC9isGrantedSbvgZ",
+                "moduleName": "SAMobileCapture",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDenied",
+            "printedName": "isDenied",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cpy)isDenied",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC8isDeniedSbvpZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cm)isDenied",
+                "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC8isDeniedSbvgZ",
+                "moduleName": "SAMobileCapture",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cm)requestWithCompletion:",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC7request10completionyySbc_tFZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "openSettings",
+            "printedName": "openSettings()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(cm)openSettings",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC12openSettingsyyFZ",
+            "moduleName": "SAMobileCapture",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SAVideoCallPermissions",
+                "printedName": "SAMobileCapture.SAVideoCallPermissions",
+                "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions(im)init",
+            "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsCACycfc",
+            "moduleName": "SAMobileCapture",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SAMobileCapture@objc(cs)SAVideoCallPermissions",
+        "mangledName": "$s15SAMobileCapture22SAVideoCallPermissionsC",
+        "moduleName": "SAMobileCapture",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -40701,6 +42211,69 @@
       "offset": 2365,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "StringLiteral",
+      "offset": 2285,
+      "length": 13,
+      "value": "\"SAVideoCall\""
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "StringLiteral",
+      "offset": 2423,
+      "length": 8,
+      "value": "\"agent-\""
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2778,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2997,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3049,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3209,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallPermissions.swift",
+      "kind": "Dictionary",
+      "offset": 820,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallPermissions.swift",
+      "kind": "StringLiteral",
+      "offset": 844,
+      "length": 26,
+      "value": "\"NSCameraUsageDescription\""
+    },
+    {
+      "filePath": "\/Users\/rasitulcay\/Projects\/Sodec\/sodec-identity-platform-mobile-v2\/ios\/sdk\/SAMobileCapture\/SAMobileCapture\/VideoCall\/SAVideoCallPermissions.swift",
+      "kind": "StringLiteral",
+      "offset": 887,
+      "length": 30,
+      "value": "\"NSMicrophoneUsageDescription\""
     },
     {
       "filePath": "\/Users\/rasitulcay\/Library\/Developer\/Xcode\/DerivedData\/SAMobileCapture-fwarikebhkbmqsenlufjimjxhkwo\/Build\/Intermediates.noindex\/ArchiveIntermediates\/SAMobileCapture\/IntermediateBuildFilesPath\/SAMobileCapture.build\/Release-iphonesimulator\/SAMobileCapture.build\/DerivedSources\/GeneratedAssetSymbols.swift",

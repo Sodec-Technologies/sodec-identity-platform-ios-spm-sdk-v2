@@ -1191,6 +1191,58 @@ extension SAMobileCapture::PassportReader : CoreNFC::NFCTagReaderSessionDelegate
   public func tagReaderSession(_ session: CoreNFC::NFCTagReaderSession, didInvalidateWithError error: any Swift::Error)
   public func tagReaderSession(_ session: CoreNFC::NFCTagReaderSession, didDetect tags: [CoreNFC::NFCTag])
 }
+@objc public protocol SAVideoCallClientDelegate {
+  @objc func videoCallClientDidConnect(_ client: SAMobileCapture::SAVideoCallClient)
+  @objc func videoCallClient(_ client: SAMobileCapture::SAVideoCallClient, agentPresenceDidChange isPresent: Swift::Bool)
+  @objc optional func videoCallClientDidReceiveAgentVideo(_ client: SAMobileCapture::SAVideoCallClient)
+  @objc optional func videoCallClientIsReconnecting(_ client: SAMobileCapture::SAVideoCallClient)
+  @objc optional func videoCallClientDidReconnect(_ client: SAMobileCapture::SAVideoCallClient)
+  @objc func videoCallClient(_ client: SAMobileCapture::SAVideoCallClient, didDisconnectWithError error: Foundation::NSError?)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class SAVideoCallClient : ObjectiveC::NSObject {
+  @objc public static let errorDomain: Swift::String
+  @objc weak final public var delegate: (any SAMobileCapture::SAVideoCallClientDelegate)?
+  @objc final public var localVideoView: UIKit::UIView {
+    @objc get
+  }
+  @objc final public var remoteVideoView: UIKit::UIView {
+    @objc get
+  }
+  @objc final public var isAgentPresent: Swift::Bool {
+    get
+  }
+  @objc final public var isConnected: Swift::Bool {
+    @objc get
+  }
+  @objc final public var isMicrophoneEnabled: Swift::Bool {
+    get
+  }
+  @objc final public var isCameraEnabled: Swift::Bool {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+  @objc final public func connect(url: Swift::String, token: Swift::String, width: Swift::Int, height: Swift::Int, frameRate: Swift::Int, maxBitrateKbps: Swift::Int, completion: @escaping (Foundation::NSError?) -> Swift::Void)
+  @objc final public func setMicrophoneEnabled(_ enabled: Swift::Bool, completion: ((Foundation::NSError?) -> Swift::Void)? = nil)
+  @objc final public func setCameraEnabled(_ enabled: Swift::Bool, completion: ((Foundation::NSError?) -> Swift::Void)? = nil)
+  @objc final public func switchCamera(completion: ((Foundation::NSError?) -> Swift::Void)? = nil)
+  @objc final public func disconnect(completion: (() -> Swift::Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers final public class SAVideoCallPermissions : ObjectiveC::NSObject {
+  @objc public static var hasUsageDescriptions: Swift::Bool {
+    @objc get
+  }
+  @objc public static var isGranted: Swift::Bool {
+    @objc get
+  }
+  @objc public static var isDenied: Swift::Bool {
+    @objc get
+  }
+  @objc public static func request(completion: @escaping (Swift::Bool) -> Swift::Void)
+  @objc public static func openSettings()
+  @objc override dynamic public init()
+  @objc deinit
+}
 @available(iOS 13, macOS 10.15, *)
 extension SAMobileCapture::CertificateType : Swift::Equatable {}
 @available(iOS 13, macOS 10.15, *)

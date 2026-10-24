@@ -22,6 +22,8 @@
 @class SACustomerData;
 @class SADate;
 @class SAFlowConfig;
+@class SAFlowConfigVideoCall;
+@class SAVideoCallStatus;
 @class SAFormDataList;
 @class SAIdentityData;
 @class SAKycResult;
@@ -115,11 +117,59 @@ verificationResultForSelfie:(nullable SAVerificationResult *)verificationResultF
                   success:(void (^)(void))successCallback
                   failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
 
+/**
+ * GET api/video-call/availability (SIPMI-23). End'den hemen önce çağrılır; görüntülü görüşmenin o an kullanılabilir olup
+ * olmadığını döner. Yanıt zarfı {"error": null | {code, message}, "data": {...}}.
+ */
++ (void)videoCallAvailabilityService:(SARequestParams *)requestParams
+                             timeout:(NSTimeInterval)timeout
+                     cookieOfSession:(NSString *)cookieOfSession
+                             success:(void (^)(SAFlowConfigVideoCall *availability))successCallback
+                             failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
+
 + (void)finishProcessService:(SARequestParams *)requestParams
                       timeout:(NSTimeInterval)timeout
               cookieOfSession:(NSString *)cookieOfSession
                     kycResult:(SAKycResult *)kycResult
                       success:(void (^)(BOOL status))successCallback
+                      failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
+
+/**
+ * Transaction/End; videoCallEnabled = YES ise "video-call-enabled: true" başlığıyla gönderilir (SIPMI-25). Başlıklı
+ * yanıtta videoCallPending (YES = işlem görüntülü görüşmeye bırakıldı, join yapılır; NO = işlem normal kapandı) ve
+ * kabul edilmediyse videoCallReason döner. Başlıksız çağrıda videoCallPending nil'dir.
+ */
++ (void)finishProcessService:(SARequestParams *)requestParams
+                      timeout:(NSTimeInterval)timeout
+              cookieOfSession:(NSString *)cookieOfSession
+                    kycResult:(SAKycResult *)kycResult
+             videoCallEnabled:(BOOL)videoCallEnabled
+                      success:(void (^)(BOOL status, NSNumber * _Nullable videoCallPending, NSString * _Nullable videoCallReason))successCallback
+                      failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
+
+/**
+ * Görüntülü görüşme uçları (SIPMI-25): POST api/video-call/join, GET api/video-call/status, POST api/video-call/leave.
+ * Hata zarfındaki kod (VC0001…VC0010, SYSTEM_MAINTENANCE) errorCode olarak döner; ağ hatasında NSError kodu.
+ * join gövdesi isteğe bağlıdır: consentVersion / consentAt host uygulamadan gelir.
+ */
++ (void)videoCallJoinService:(SARequestParams *)requestParams
+                     timeout:(NSTimeInterval)timeout
+             cookieOfSession:(NSString *)cookieOfSession
+              consentVersion:(nullable NSString *)consentVersion
+                   consentAt:(nullable NSDate *)consentAt
+                     success:(void (^)(SAVideoCallStatus *status))successCallback
+                     failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
+
++ (void)videoCallStatusService:(SARequestParams *)requestParams
+                       timeout:(NSTimeInterval)timeout
+               cookieOfSession:(NSString *)cookieOfSession
+                       success:(void (^)(SAVideoCallStatus *status))successCallback
+                       failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
+
++ (void)videoCallLeaveService:(SARequestParams *)requestParams
+                      timeout:(NSTimeInterval)timeout
+              cookieOfSession:(NSString *)cookieOfSession
+                      success:(void (^)(SAVideoCallStatus *status))successCallback
                       failure:(void (^)(NSString *errorCode, NSString *errorMessage))failureCallback;
 
 @end

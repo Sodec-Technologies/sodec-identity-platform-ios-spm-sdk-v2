@@ -34,6 +34,14 @@
  */
 @property (strong, nonatomic, readwrite, nullable) NSString *bodyText;
 
+/**
+ * Görüntülü görüşmeyle sonuçlanan işlemde görüşmenin bitiş durumu (APPROVED / REJECTED / EXPIRED / DROPPED /
+ * ABANDONED) ve müşteriye gösterilebilir gerekçe kodu (SIPMI-27). Görüşme yapılmadıysa nil. Nihai karar görüşmede
+ * verildiği için onay dışındaki her sonuç SAVerificationResultTypeRejected olarak bildirilir.
+ */
+@property (strong, nonatomic, readwrite, nullable) NSString *videoCallResult;
+@property (strong, nonatomic, readwrite, nullable) NSString *videoCallReasonCode;
+
 - (NSDictionary *)toDictionary;
 
 @end

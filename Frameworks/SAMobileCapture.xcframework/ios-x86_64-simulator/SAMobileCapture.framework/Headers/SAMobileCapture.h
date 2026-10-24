@@ -71,6 +71,7 @@
 #import <SAMobileCapture/SAPhotocopyDetectionResult.h>
 #import <SAMobileCapture/SAApiManager.h>
 #import <SAMobileCapture/SAFlowConfig.h>
+#import <SAMobileCapture/SAVideoCallStatus.h>
 #import <SAMobileCapture/SAFlowCreator.h>
 #import <SAMobileCapture/SARequestBuilder.h>
 #import <SAMobileCapture/SARequestParams.h>

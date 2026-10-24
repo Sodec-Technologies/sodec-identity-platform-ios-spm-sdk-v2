@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		JncFlgU/X8buDCybHjAolifJx/A=
+		ilauD/VmR1dYa05G2em8/OwWnjI=
 		</data>
 		<key>FBLPromises_Privacy.bundle/Info.plist</key>
 		<data>
-		5jlV4jcdhjVfU2H7EVGYVM51AH4=
+		6ceT9nEpUAewR84hSQnzLfn54go=
 		</data>
 		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>GoogleDataTransport_Privacy.bundle/Info.plist</key>
 		<data>
-		41hj8y1KnT/3zcWHx0ekzftxdkk=
+		4KUbGHBV70lV1KRx9rMurrMtMu0=
 		</data>
 		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/Info.plist</key>
 		<data>
-		bx/IYKNhJxVUfHhws3hGmyWfKHI=
+		V2b2+0bRyIMhujRyG9sUKNYXcCo=
 		</data>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>GoogleUtilities_Privacy.bundle/Info.plist</key>
 		<data>
-		5TZu49K66QSkWTBP+zPdjS50ypQ=
+		WFdwXG0eTMr2E1eujxt0awUIh4c=
 		</data>
 		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Headers/SAApiManager.h</key>
 		<data>
-		SyX32UlDCwWHF5Y2CjF29eIr5B0=
+		FcLhvCYySa9JK0asPB0FTCv8QOM=
 		</data>
 		<key>Headers/SABiometricVerification.h</key>
 		<data>
@@ -286,7 +286,7 @@
 		</data>
 		<key>Headers/SAFlowConfig.h</key>
 		<data>
-		61bUhM2AOc+mYZGoQCFe3uxDC28=
+		YNCT4yC2a8OyRayoShHbowFzVQI=
 		</data>
 		<key>Headers/SAFlowCreator.h</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Headers/SAKycResult.h</key>
 		<data>
-		SLprvChk4/RhtnlPJKV6hEiqlc0=
+		eOko2f10Xu26+N/zmU6YHMOix+U=
 		</data>
 		<key>Headers/SALibrary.h</key>
 		<data>
@@ -346,11 +346,11 @@
 		</data>
 		<key>Headers/SAMobileCapture-Swift.h</key>
 		<data>
-		ajtET1sL9MCSORuscWnbELXXxNw=
+		zeonR8VKuE0EQU+obQXumBjRLls=
 		</data>
 		<key>Headers/SAMobileCapture.h</key>
 		<data>
-		cNm+Ij8fOFD9XQbF+cRHhAT5DqU=
+		zkMHt7ui0oH3WDiQGV5B3KsWtNw=
 		</data>
 		<key>Headers/SANotificationConfig.h</key>
 		<data>
@@ -402,7 +402,7 @@
 		</data>
 		<key>Headers/SAServiceBuilder.h</key>
 		<data>
-		POHkXkmDLUehoC4OJFCbbUwj2qM=
+		GtRaWVgL5eosDWOTTfQUC56AXuI=
 		</data>
 		<key>Headers/SASignDocument.h</key>
 		<data>
@@ -476,6 +476,10 @@
 		<data>
 		jgIpJ3SzQ/DyGdDTk/HQZIVZphc=
 		</data>
+		<key>Headers/SAVideoCallStatus.h</key>
+		<data>
+		5JuenvKiN3x1kLxPWGaJDOinmVY=
+		</data>
 		<key>Headers/SAVideoOutput.h</key>
 		<data>
 		Aj0YRluwthR6QJPl4u5qx7EbAhQ=
@@ -494,11 +498,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zrYH4x44/ZqvFVv5unXgRPC8vT8=
+		AFLxPP6UCMnrSRsKkdnhEgGvwJY=
 		</data>
 		<key>LatinOCRResources.bundle/Info.plist</key>
 		<data>
-		qRsPTAtQIFGFxSJfPgKoKGrWG5w=
+		FNPgZ1TilKHKNEhWAYxB4MrNpJI=
 		</data>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
 		<data>
@@ -534,27 +538,35 @@
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lDsUN8b4TsT8pNEHrxhpFFZZZVI=
+		OEcjWASs6mwR7ioNuYArKFd6yss=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ImhU+Y8ErsIh9cQduGhP4O09ZSk=
+		VzvMNZz3p8WW1zUa5QeJiQ9sFcc=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jyXyKLlsnGE6D/DJur+suhBR6Cw=
+		WTpLZGavaPDtBztpLrMhHN78Mx8=
 		</data>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ImhU+Y8ErsIh9cQduGhP4O09ZSk=
+		VzvMNZz3p8WW1zUa5QeJiQ9sFcc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		fbKyauJyl44D+4EDstPzazXXkEU=
 		</data>
+		<key>Privacy.bundle/Info.plist</key>
+		<data>
+		vfuaq0XGZzWuRya4CdHL0g+Ujtg=
+		</data>
+		<key>Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		wmMD48zpyUq8t59ndct7nWvy/FE=
+		</data>
 		<key>Protobuf_Privacy.bundle/Info.plist</key>
 		<data>
-		VN5LCViLiVCJVFXX29uUIz3fD8g=
+		ACcfbFtJHEMyG7QTa41gGtJD8o0=
 		</data>
 		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -602,7 +614,7 @@
 		</data>
 		<key>nanopb_Privacy.bundle/Info.plist</key>
 		<data>
-		nEKK8kYfTW6fcZyIdwutv0APK+E=
+		Gw1z/g7TG24WVOOyKTUPPczUODA=
 		</data>
 		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -711,14 +723,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lk0vXadhRya6PtxJUCmHmMkBrpHbJnQlBZaZIPvsPVA=
+			r5q0ipihF9godC4CMBeO6huDqi7CwNhvzIOD6/6PJZk=
 			</data>
 		</dict>
 		<key>FBLPromises_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F7lITChBr9UeRG1GqOIXRkiwthMhdMHRlRVa8OcgL5I=
+			9WpjgNoxd4w5T9IxOFIHCDY+86OZJkHzTikQLDOz9u0=
 			</data>
 		</dict>
 		<key>FBLPromises_Privacy.bundle/PrivacyInfo.xcprivacy</key>
@@ -732,7 +744,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yqPZfOqDcuWxexKjxHqmtj5LczkCiYfT/RE4st0PUYs=
+			974ERK8tg79tytBYzOMuxJLhRnVGxQ+OX340bHwDSQE=
 			</data>
 		</dict>
 		<key>GoogleDataTransport_Privacy.bundle/PrivacyInfo.xcprivacy</key>
@@ -767,7 +779,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AwhOzb88QjmQt+1gPppyjVBczkzOxJvAfSyfXyD5V4o=
+			eR3UZ5exdVOdMFeN84D814T75Kc3lCDrFIeBhQTHxmc=
 			</data>
 		</dict>
 		<key>GoogleMVFaceDetectorResources.bundle/LMprec_600.emd</key>
@@ -837,7 +849,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nmbeRCeDyLD3M8RE9ZfPd8Lu95yHit+KhPGui0DCkdY=
+			bSJJ8NtDLqRNkUrMG4YPysnYJPbOYt07jG4aySlJy1I=
 			</data>
 		</dict>
 		<key>GoogleUtilities_Privacy.bundle/PrivacyInfo.xcprivacy</key>
@@ -886,7 +898,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZMo16bGNNFjAdZcz+HS2101dpyjAc9//fdXND0eiDGM=
+			zGIJ9QV6/aSKiV66wmx9AF/rc1vcDBZo0NSCaSXu7Mg=
 			</data>
 		</dict>
 		<key>Headers/SABiometricVerification.h</key>
@@ -1201,7 +1213,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VZx+KHAOvlbdDTm/3n2i8e0Dtd8S7D03EWtB0whDb6s=
+			5UEsD8kAojpGr8kbLvCucYKZCKJhCMRp+u247sXv7cQ=
 			</data>
 		</dict>
 		<key>Headers/SAFlowCreator.h</key>
@@ -1285,7 +1297,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v54sIspwXMyeWxniCzBiw40o0Q9R5Z3q3Y/Gf774xoI=
+			UQT0/nWFiCdPrUeLD4HIhqRIDkJeh+yf/dcOUd4UGNc=
 			</data>
 		</dict>
 		<key>Headers/SALibrary.h</key>
@@ -1306,14 +1318,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dMr1AT+Pv3ZN7qMNHDUOJVborKtSFl8QF7TYC1YE9LY=
+			Wyko2MJvH/z+M69iJBJv4YcK7G3HxIj199bHbsuvZwA=
 			</data>
 		</dict>
 		<key>Headers/SAMobileCapture.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XTrGRwZlkHiIe8NyofRJDWioe6FnzUqp/rSVfjEiwUs=
+			M0Y+0xAGI+ECt4gAkfqHQvkYR91ZezVrMTCcotrCqBg=
 			</data>
 		</dict>
 		<key>Headers/SANotificationConfig.h</key>
@@ -1404,7 +1416,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q+EyZzOtJ5jUW0Rnb3B93jSGBMukrXeI1Jb4gQtdHlA=
+			DMxXXHwfGi/JsgB8wEOnKDT/ueONoWXpba+tWiT0X94=
 			</data>
 		</dict>
 		<key>Headers/SASignDocument.h</key>
@@ -1533,6 +1545,13 @@
 			etxnrSUa7vVfcSoHijNwkIrZzZWNZZjU/iXV57MkSG8=
 			</data>
 		</dict>
+		<key>Headers/SAVideoCallStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WMFKYIk3SzlwNZZsKo/XHmyo1g0D4EJOBMlBNo3jeII=
+			</data>
+		</dict>
 		<key>Headers/SAVideoOutput.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1565,7 +1584,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TNvraaXwZLRZeQEcYaWyiAwOJOO5Z/H/TYtJWm3HEag=
+			z1G94OUx6esEOmhd7Ggspo7qakFl2N/0Y9DxfZJpsAk=
 			</data>
 		</dict>
 		<key>LatinOCRResources.bundle/region_proposal_text_detector_tflite_gray_quantized.bincfg</key>
@@ -1628,28 +1647,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			esR0Ir/Il07YRgUdnwwXGrW6y2Vj8eRRjD3pDU4MEB0=
+			MWG7WNOCbE54WiwdEe8jctLfoa0WwnzuZAjSJDA0NGs=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dky5s7SrTt9xwigYIewB+CnESoMiP7SlWiysHFVfB7I=
+			xHm953Y2cQnqwLfUeaIbr3lJIE8V3hQkn7dnojort9Y=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QGyH4U7kdkvs/dHbs1UM/Z9wcuW8GcB4CGyvJpb7NdM=
+			/quVGCxQLNOcnofde+SRMRlCrxeTVHzIrV8fUEtBDB8=
 			</data>
 		</dict>
 		<key>Modules/SAMobileCapture.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dky5s7SrTt9xwigYIewB+CnESoMiP7SlWiysHFVfB7I=
+			xHm953Y2cQnqwLfUeaIbr3lJIE8V3hQkn7dnojort9Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1659,11 +1678,25 @@
 			Y0jQ621Dmuwd/CQfPnBi4wLhUO32Zf51sqvEvOlgoC8=
 			</data>
 		</dict>
+		<key>Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OFvsJadNy4MNYoBNgvwHsykS5550Kws5m6UK2Rpvfic=
+			</data>
+		</dict>
+		<key>Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eu0uIR+l7kDmRXQjvbSFo/oKYLThgmWOn+9SOckY28A=
+			</data>
+		</dict>
 		<key>Protobuf_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bsGHO/zZaB4WDkU5Q1nu+Kj2Lo1WVTsq3ITCpM8yHR4=
+			SlBbaf86H8PLovkJf1WzuxCprJBAZ8z8O8ualx/7vMA=
 			</data>
 		</dict>
 		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
@@ -1747,7 +1780,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			W947gjO6nk5d1Jp/IXxrYC1MYBObTS9E7Q/4a3PygCw=
+			anHGnK0Ttj2oewNcMFubJcd1FBvVNk2wlVREWVytmrQ=
 			</data>
 		</dict>
 		<key>nanopb_Privacy.bundle/PrivacyInfo.xcprivacy</key>
